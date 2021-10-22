@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignInController" customModule="fefuactivity" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Пароль" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xZc-sx-ROu" customClass="PasswordTextField" customModule="fefuactivity" customModuleProvider="target">
+                    <rect key="frame" x="20" y="283" width="374" height="53"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="53" id="2tm-qf-7Zy"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <textInputTraits key="textInputTraits" textContentType="password"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kos-IK-taC">
+                    <rect key="frame" x="26" y="396" width="362" height="56"/>
+                    <color key="backgroundColor" red="0.29411764705882354" green="0.035294117647058823" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="56" id="Xgr-U5-e7I"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                    <state key="normal" title="Продолжить">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="12"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PeopleBicycles" translatesAutoresizingMaskIntoConstraints="NO" id="m6f-d0-BkI">
+                    <rect key="frame" x="0.0" y="486" width="414" height="388.5"/>
+                </imageView>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Логин" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="F9l-Hh-e5k">
+                    <rect key="frame" x="18" y="209" width="378" height="53"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="53" id="lkw-gT-YGU"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <textInputTraits key="textInputTraits" textContentType="username"/>
+                </textField>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="xZc-sx-ROu" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="283" id="1Pa-Tj-4XE"/>
+                <constraint firstItem="F9l-Hh-e5k" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="156" id="5T2-75-W5w"/>
+                <constraint firstItem="xZc-sx-ROu" firstAttribute="top" secondItem="F9l-Hh-e5k" secondAttribute="bottom" constant="30" id="8Uh-t7-7vX"/>
+                <constraint firstItem="kos-IK-taC" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="396" id="BPT-ZE-UMV"/>
+                <constraint firstItem="F9l-Hh-e5k" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="18" id="Bqv-Sk-asp"/>
+                <constraint firstAttribute="trailing" secondItem="kos-IK-taC" secondAttribute="trailing" constant="26" id="Cvx-Cz-Gft"/>
+                <constraint firstItem="F9l-Hh-e5k" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="18" id="Hm7-ZX-8Dv"/>
+                <constraint firstItem="xZc-sx-ROu" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="K7h-dL-tqK"/>
+                <constraint firstAttribute="trailing" secondItem="xZc-sx-ROu" secondAttribute="trailing" constant="20" id="Khi-a1-YsN"/>
+                <constraint firstAttribute="bottom" secondItem="xZc-sx-ROu" secondAttribute="bottom" constant="560" id="Ojt-8H-sR4"/>
+                <constraint firstItem="kos-IK-taC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="26" id="Q9Y-sy-qLT"/>
+                <constraint firstAttribute="bottom" secondItem="kos-IK-taC" secondAttribute="bottom" constant="444" id="QMe-4C-drK"/>
+                <constraint firstItem="m6f-d0-BkI" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="486" id="XIT-9T-zOi"/>
+                <constraint firstItem="xZc-sx-ROu" firstAttribute="top" secondItem="F9l-Hh-e5k" secondAttribute="bottom" constant="21" id="Y7v-52-PGw"/>
+                <constraint firstItem="F9l-Hh-e5k" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="165" id="Z0s-mx-Pl7"/>
+                <constraint firstItem="F9l-Hh-e5k" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="200" id="ccu-oe-0uX"/>
+                <constraint firstAttribute="trailing" secondItem="F9l-Hh-e5k" secondAttribute="trailing" constant="18" id="eVZ-zv-pYA"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="F9l-Hh-e5k" secondAttribute="trailing" constant="18" id="feJ-if-Pld"/>
+                <constraint firstItem="F9l-Hh-e5k" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="18" id="hvh-rY-vvY"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="F9l-Hh-e5k" secondAttribute="trailing" constant="18" id="muK-7J-xSU"/>
+                <constraint firstItem="m6f-d0-BkI" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="pfn-E5-tfN"/>
+                <constraint firstAttribute="trailing" secondItem="m6f-d0-BkI" secondAttribute="trailing" id="rVw-fZ-0uA"/>
+                <constraint firstAttribute="bottom" secondItem="F9l-Hh-e5k" secondAttribute="bottom" constant="643" id="s8c-2U-V4g"/>
+            </constraints>
+            <point key="canvasLocation" x="100.00000000000001" y="78.348214285714278"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="PeopleBicycles" width="414" height="388.5"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
