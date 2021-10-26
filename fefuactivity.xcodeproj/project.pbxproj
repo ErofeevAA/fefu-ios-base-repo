@@ -13,6 +13,11 @@
 		1DE4E5CC270A5CCE004A30CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DE4E5CA270A5CCE004A30CA /* Main.storyboard */; };
 		1DE4E5CE270A5CD0004A30CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DE4E5CD270A5CD0004A30CA /* Assets.xcassets */; };
 		1DE4E5D1270A5CD0004A30CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DE4E5CF270A5CD0004A30CA /* LaunchScreen.storyboard */; };
+		9D036C7E2719D910001B2344 /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D036C7C2719D910001B2344 /* SignUpController.swift */; };
+		9D036C7F2719D910001B2344 /* SignUpController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D036C7D2719D910001B2344 /* SignUpController.xib */; };
+		9D036C8227207BBF001B2344 /* SignInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D036C8027207BBF001B2344 /* SignInController.swift */; };
+		9D036C8327207BBF001B2344 /* SignInController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D036C8127207BBF001B2344 /* SignInController.xib */; };
+		9D036C872721883A001B2344 /* PasswordTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D036C862721883A001B2344 /* PasswordTextView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		1DE4E5CD270A5CD0004A30CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1DE4E5D0270A5CD0004A30CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1DE4E5D2270A5CD0004A30CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D036C7C2719D910001B2344 /* SignUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
+		9D036C7D2719D910001B2344 /* SignUpController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpController.xib; sourceTree = "<group>"; };
+		9D036C8027207BBF001B2344 /* SignInController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInController.swift; sourceTree = "<group>"; };
+		9D036C8127207BBF001B2344 /* SignInController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignInController.xib; sourceTree = "<group>"; };
+		9D036C862721883A001B2344 /* PasswordTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordTextView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +73,11 @@
 				1DE4E5CD270A5CD0004A30CA /* Assets.xcassets */,
 				1DE4E5CF270A5CD0004A30CA /* LaunchScreen.storyboard */,
 				1DE4E5D2270A5CD0004A30CA /* Info.plist */,
+				9D036C7C2719D910001B2344 /* SignUpController.swift */,
+				9D036C7D2719D910001B2344 /* SignUpController.xib */,
+				9D036C8027207BBF001B2344 /* SignInController.swift */,
+				9D036C8127207BBF001B2344 /* SignInController.xib */,
+				9D036C862721883A001B2344 /* PasswordTextView.swift */,
 			);
 			path = fefuactivity;
 			sourceTree = "<group>";
@@ -127,6 +142,8 @@
 				1DE4E5D1270A5CD0004A30CA /* LaunchScreen.storyboard in Resources */,
 				1DE4E5CE270A5CD0004A30CA /* Assets.xcassets in Resources */,
 				1DE4E5CC270A5CCE004A30CA /* Main.storyboard in Resources */,
+				9D036C7F2719D910001B2344 /* SignUpController.xib in Resources */,
+				9D036C8327207BBF001B2344 /* SignInController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,7 +156,10 @@
 			files = (
 				1DE4E5C9270A5CCE004A30CA /* ViewController.swift in Sources */,
 				1DE4E5C5270A5CCE004A30CA /* AppDelegate.swift in Sources */,
+				9D036C872721883A001B2344 /* PasswordTextView.swift in Sources */,
 				1DE4E5C7270A5CCE004A30CA /* SceneDelegate.swift in Sources */,
+				9D036C8227207BBF001B2344 /* SignInController.swift in Sources */,
+				9D036C7E2719D910001B2344 /* SignUpController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
