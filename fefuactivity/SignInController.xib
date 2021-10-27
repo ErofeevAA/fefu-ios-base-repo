@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignInController" customModule="fefuactivity" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PeopleBicycles" translatesAutoresizingMaskIntoConstraints="NO" id="m6f-d0-BkI">
+                    <rect key="frame" x="0.0" y="533.5" width="414" height="388.5"/>
+                </imageView>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Пароль" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xZc-sx-ROu" customClass="PasswordTextField" customModule="fefuactivity" customModuleProvider="target">
+                    <rect key="frame" x="18" y="134" width="378" height="53"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="53" id="2tm-qf-7Zy"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <textInputTraits key="textInputTraits" textContentType="password"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kos-IK-taC">
+                    <rect key="frame" x="26" y="227" width="362" height="56"/>
+                    <color key="backgroundColor" red="0.29411764705882354" green="0.035294117647058823" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="56" id="Xgr-U5-e7I"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                    <state key="normal" title="Продолжить">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="12"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Логин" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="F9l-Hh-e5k">
+                    <rect key="frame" x="18" y="61" width="378" height="53"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="53" id="lkw-gT-YGU"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <textInputTraits key="textInputTraits" textContentType="username"/>
+                </textField>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="m6f-d0-BkI" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="23r-lI-kax"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="m6f-d0-BkI" secondAttribute="bottom" constant="-60" id="55I-yL-eHf"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="kos-IK-taC" secondAttribute="trailing" constant="26" id="AY8-06-scb"/>
+                <constraint firstItem="xZc-sx-ROu" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="18" id="LHu-Eg-qNO"/>
+                <constraint firstItem="kos-IK-taC" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="26" id="RyR-1j-Scx"/>
+                <constraint firstItem="kos-IK-taC" firstAttribute="top" secondItem="xZc-sx-ROu" secondAttribute="bottom" constant="40" id="UCT-si-hV8"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="xZc-sx-ROu" secondAttribute="trailing" constant="18" id="adg-iV-2SR"/>
+                <constraint firstItem="m6f-d0-BkI" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="fgL-Sk-ZWU"/>
+                <constraint firstItem="F9l-Hh-e5k" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="17" id="keb-Z5-4ky"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="F9l-Hh-e5k" secondAttribute="trailing" constant="18" id="l5l-5U-Emc"/>
+                <constraint firstItem="F9l-Hh-e5k" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="18" id="mjn-6s-SCh"/>
+                <constraint firstItem="xZc-sx-ROu" firstAttribute="top" secondItem="F9l-Hh-e5k" secondAttribute="bottom" constant="20" id="n6x-oH-4rV"/>
+            </constraints>
+            <point key="canvasLocation" x="100.00000000000001" y="78.348214285714278"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="PeopleBicycles" width="414" height="388.5"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
