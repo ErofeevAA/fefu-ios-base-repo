@@ -1,10 +1,3 @@
-//
-//  PasswordTextView.swift
-//  fefuactivity
-//
-//  Created by wsr1 on 21.10.2021.
-//
-
 import UIKit
 
 class PasswordTextField: UITextField {

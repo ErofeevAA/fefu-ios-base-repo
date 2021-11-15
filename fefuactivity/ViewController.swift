@@ -4,6 +4,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        present(TabBarViewController(nibName: "TabBarViewController", bundle: nil), animated: true, completion: nil)
     }
     
     override func viewWillAppear(_ animated: Bool) {

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ActivitiesViewController" customModule="fefuactivity" customModuleProvider="target">
+            <connections>
+                <outlet property="emptyStateView" destination="h3Z-se-15G" id="nIg-gp-sn8"/>
+                <outlet property="listActivities" destination="GN8-OO-xj3" id="RsQ-Dn-o9Z"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y8H-oj-Yvc">
+                    <rect key="frame" x="20" y="810" width="374" height="42"/>
+                    <color key="backgroundColor" systemColor="systemBlueColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="42" id="fV5-Ra-Jls"/>
+                    </constraints>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Старт">
+                        <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="17"/>
+                    </buttonConfiguration>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="12"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="clickStart:" destination="-1" eventType="touchUpInside" id="WW0-uc-49C"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h3Z-se-15G">
+                    <rect key="frame" x="0.0" y="384" width="414" height="128"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Время потренить" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pny-nQ-Dli">
+                            <rect key="frame" x="124.5" y="10" width="165" height="31"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="31" id="N5d-Rq-wXt"/>
+                                <constraint firstAttribute="width" constant="165" id="ZIE-KR-uxG"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Нажимай кнопку ниже и начинаем трекать активность" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uzU-5G-bug">
+                            <rect key="frame" x="0.0" y="69" width="414" height="41"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Pny-nQ-Dli" firstAttribute="top" secondItem="h3Z-se-15G" secondAttribute="top" constant="10" id="2mg-rI-iRH"/>
+                        <constraint firstAttribute="trailing" secondItem="uzU-5G-bug" secondAttribute="trailing" id="AZD-PG-Tny"/>
+                        <constraint firstAttribute="bottom" secondItem="uzU-5G-bug" secondAttribute="bottom" constant="18" id="E0v-X7-AV8"/>
+                        <constraint firstItem="uzU-5G-bug" firstAttribute="centerX" secondItem="h3Z-se-15G" secondAttribute="centerX" id="b8m-ZC-9ZL"/>
+                        <constraint firstItem="Pny-nQ-Dli" firstAttribute="centerX" secondItem="h3Z-se-15G" secondAttribute="centerX" id="dvl-QM-m5q"/>
+                        <constraint firstAttribute="height" constant="128" id="hhr-mz-Ti2"/>
+                        <constraint firstItem="uzU-5G-bug" firstAttribute="leading" secondItem="h3Z-se-15G" secondAttribute="leading" id="xZV-HY-1sV"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="insetGrouped" separatorStyle="none" separatorInsetReference="fromAutomaticInsets" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="GN8-OO-xj3">
+                    <rect key="frame" x="0.0" y="44" width="414" height="752"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
+                    <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="sectionIndexTrackingBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="0.891156462585034" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="GN8-OO-xj3" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="2I2-Ji-bsv"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="h3Z-se-15G" secondAttribute="trailing" id="GSQ-2H-rdZ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Y8H-oj-Yvc" secondAttribute="bottom" constant="10" id="LIF-G3-9eb"/>
+                <constraint firstItem="h3Z-se-15G" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="TcT-Sg-VSh"/>
+                <constraint firstItem="Y8H-oj-Yvc" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Uaq-ak-Xn3"/>
+                <constraint firstItem="h3Z-se-15G" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="W7l-Rc-gbP"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Y8H-oj-Yvc" secondAttribute="trailing" constant="20" id="Y4R-UN-SES"/>
+                <constraint firstItem="h3Z-se-15G" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="aRR-wy-nHm"/>
+                <constraint firstItem="h3Z-se-15G" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="biJ-5d-xXx"/>
+                <constraint firstItem="GN8-OO-xj3" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="bjg-Vl-coW"/>
+                <constraint firstItem="GN8-OO-xj3" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="gSa-3f-jNY"/>
+                <constraint firstItem="Y8H-oj-Yvc" firstAttribute="top" secondItem="GN8-OO-xj3" secondAttribute="bottom" constant="14" id="rsb-2B-4PM"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="99.776785714285708"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
