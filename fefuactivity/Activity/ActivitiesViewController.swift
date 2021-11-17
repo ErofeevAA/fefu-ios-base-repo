@@ -49,9 +49,13 @@ class ActivitiesViewController: UIViewController {
     }
     
     @IBAction func clickStart(_ sender: Any) {
+        if emptyStateView.isHidden {
+            let controller = MapController(nibName: "MapController", bundle: nil)
+            navigationController?.pushViewController(controller, animated: true)
+            return
+        }
         emptyStateView.isHidden = true
         listActivities.isHidden = false
-        //Exception    NSException *    "unable to dequeue a cell with identifier ActivityTableViewCell - must register a nib or a class for the identifier or connect a prototype cell in a storyboard"
     }
     
 }
