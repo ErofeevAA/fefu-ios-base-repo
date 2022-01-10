@@ -2,9 +2,9 @@
 import UIKit
 
 struct ParamsTableCell {
-    let distance: String
-    let duration: String
-    let timeAgo: String
+    let distance: Double
+    let duration: Double
+    let date: Date
     let icon: UIImage?
     let type: String
     let startTime: String
@@ -30,11 +30,18 @@ class ActivityTableViewCell: UITableViewCell {
     }
     
     func bind(_ params: ParamsTableCell) {
-        distanceLabel.text = params.distance
-        durationLabel.text = params.duration
+        distanceLabel.text = String(format: "%.2f км", params.distance / 1000)
+        
+        let duration = DateComponentsFormatter()
+        duration.allowedUnits = [.hour, .minute, .second]
+        duration.zeroFormattingBehavior = .pad
+        
+        durationLabel.text = duration.string(from: params.duration)
         iconView.image = params.icon
         typeLabel.text = params.type
-        timeAgoLabel.text = params.timeAgo
+        let df = DateFormatter()
+        df.dateFormat = "yyyy-MM-dd"
+        timeAgoLabel.text = df.string(from: params.date)
     }
     
 }

@@ -29,6 +29,10 @@
 		9DB2AC10273D7E5700871E22 /* ActivityDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DB2AC0E273D7E5700871E22 /* ActivityDetailsViewController.xib */; };
 		9DB2AC13274529BD00871E22 /* MapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB2AC11274529BD00871E22 /* MapController.swift */; };
 		9DB2AC14274529BD00871E22 /* MapController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DB2AC12274529BD00871E22 /* MapController.xib */; };
+		9DC260D22773759B002D0738 /* ActivityTypeViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC260D02773759B002D0738 /* ActivityTypeViewCell.swift */; };
+		9DC260D32773759B002D0738 /* ActivityTypeViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DC260D12773759B002D0738 /* ActivityTypeViewCell.xib */; };
+		9DC260D6278BC1BC002D0738 /* FEFUCoreDataContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC260D5278BC1BC002D0738 /* FEFUCoreDataContainer.swift */; };
+		9DC260D9278BD598002D0738 /* fefuactivity.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9DC260D7278BD598002D0738 /* fefuactivity.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +60,10 @@
 		9DB2AC0E273D7E5700871E22 /* ActivityDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActivityDetailsViewController.xib; sourceTree = "<group>"; };
 		9DB2AC11274529BD00871E22 /* MapController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapController.swift; sourceTree = "<group>"; };
 		9DB2AC12274529BD00871E22 /* MapController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapController.xib; sourceTree = "<group>"; };
+		9DC260D02773759B002D0738 /* ActivityTypeViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityTypeViewCell.swift; sourceTree = "<group>"; };
+		9DC260D12773759B002D0738 /* ActivityTypeViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActivityTypeViewCell.xib; sourceTree = "<group>"; };
+		9DC260D5278BC1BC002D0738 /* FEFUCoreDataContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FEFUCoreDataContainer.swift; sourceTree = "<group>"; };
+		9DC260D8278BD598002D0738 /* fefuactivity.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = fefuactivity.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +96,7 @@
 		1DE4E5C3270A5CCE004A30CA /* fefuactivity */ = {
 			isa = PBXGroup;
 			children = (
+				9DC260D4278BC176002D0738 /* CoreData */,
 				9DB2ABF22731332500871E22 /* CustomViews */,
 				9DB2ABF1273127E900871E22 /* Activity */,
 				1DE4E5C4270A5CCE004A30CA /* AppDelegate.swift */,
@@ -101,6 +110,7 @@
 				9D036C7D2719D910001B2344 /* SignUpController.xib */,
 				9D036C8027207BBF001B2344 /* SignInController.swift */,
 				9D036C8127207BBF001B2344 /* SignInController.xib */,
+				9DC260D7278BD598002D0738 /* fefuactivity.xcdatamodeld */,
 			);
 			path = fefuactivity;
 			sourceTree = "<group>";
@@ -127,8 +137,18 @@
 				9D036C862721883A001B2344 /* PasswordTextView.swift */,
 				9DB2AC092732D79E00871E22 /* ActivityTableViewCell.swift */,
 				9DB2AC0A2732D79E00871E22 /* ActivityTableViewCell.xib */,
+				9DC260D02773759B002D0738 /* ActivityTypeViewCell.swift */,
+				9DC260D12773759B002D0738 /* ActivityTypeViewCell.xib */,
 			);
 			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		9DC260D4278BC176002D0738 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				9DC260D5278BC1BC002D0738 /* FEFUCoreDataContainer.swift */,
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,6 +216,7 @@
 				9DB2AC082731759F00871E22 /* ProfileViewController.xib in Resources */,
 				1DE4E5CC270A5CCE004A30CA /* Main.storyboard in Resources */,
 				9D036C7F2719D910001B2344 /* SignUpController.xib in Resources */,
+				9DC260D32773759B002D0738 /* ActivityTypeViewCell.xib in Resources */,
 				9D036C8327207BBF001B2344 /* SignInController.xib in Resources */,
 				9DB2AC00273174CE00871E22 /* ActivitiesViewController.xib in Resources */,
 			);
@@ -210,6 +231,7 @@
 			files = (
 				9DB2AC03273174FE00871E22 /* TabBarViewController.swift in Sources */,
 				1DE4E5C9270A5CCE004A30CA /* ViewController.swift in Sources */,
+				9DC260D6278BC1BC002D0738 /* FEFUCoreDataContainer.swift in Sources */,
 				9DB2AC0B2732D79E00871E22 /* ActivityTableViewCell.swift in Sources */,
 				9DB2AC0F273D7E5700871E22 /* ActivityDetailsViewController.swift in Sources */,
 				9DB2AC13274529BD00871E22 /* MapController.swift in Sources */,
@@ -217,6 +239,8 @@
 				9D036C872721883A001B2344 /* PasswordTextView.swift in Sources */,
 				9DB2ABFF273174CE00871E22 /* ActivitiesViewController.swift in Sources */,
 				1DE4E5C7270A5CCE004A30CA /* SceneDelegate.swift in Sources */,
+				9DC260D22773759B002D0738 /* ActivityTypeViewCell.swift in Sources */,
+				9DC260D9278BD598002D0738 /* fefuactivity.xcdatamodeld in Sources */,
 				9DB2AC072731759F00871E22 /* ProfileViewController.swift in Sources */,
 				9D036C8227207BBF001B2344 /* SignInController.swift in Sources */,
 				9D036C7E2719D910001B2344 /* SignUpController.swift in Sources */,
@@ -423,6 +447,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9DC260D7278BD598002D0738 /* fefuactivity.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9DC260D8278BD598002D0738 /* fefuactivity.xcdatamodel */,
+			);
+			currentVersion = 9DC260D8278BD598002D0738 /* fefuactivity.xcdatamodel */;
+			path = fefuactivity.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 1DE4E5B9270A5CCE004A30CA /* Project object */;
 }
