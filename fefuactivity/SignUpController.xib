@@ -12,7 +12,10 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignUpController" customModule="fefuactivity" customModuleProvider="target">
             <connections>
                 <outlet property="genderTextField" destination="QLB-cG-KRr" id="fng-j8-8p2"/>
-                <outlet property="iconTextField" destination="Hlm-tE-KZ0" id="QYZ-pP-Von"/>
+                <outlet property="loginTextField" destination="fJV-p4-8Sg" id="FL5-np-7Qn"/>
+                <outlet property="nameTextField" destination="UeN-Dw-b8m" id="UWw-3I-XBG"/>
+                <outlet property="passwordTextField" destination="Hlm-tE-KZ0" id="Gu6-RE-CSs"/>
+                <outlet property="repeatPasswordTextField" destination="rml-3g-KLI" id="qTt-mJ-yNu"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -62,7 +65,7 @@
                                             <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                             <textInputTraits key="textInputTraits" textContentType="nickname"/>
                                         </textField>
-                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Пол" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QLB-cG-KRr">
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Мужской" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QLB-cG-KRr">
                                             <rect key="frame" x="0.0" y="292" width="394" height="53"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="53" id="KFP-Dn-HxE"/>
@@ -87,6 +90,9 @@
                                             <integer key="value" value="12"/>
                                         </userDefinedRuntimeAttribute>
                                     </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="continueAction:" destination="-1" eventType="touchUpInside" id="chl-iz-I82"/>
+                                    </connections>
                                 </button>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bch-di-nTI">
                                     <rect key="frame" x="26" y="450" width="362" height="80"/>
