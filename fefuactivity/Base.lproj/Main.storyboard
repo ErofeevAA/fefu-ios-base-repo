@@ -46,15 +46,13 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Созданный студентами 2-го курса" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="riC-XF-6ND">
-                                <rect key="frame" x="99" y="486.5" width="216" height="45"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Созданный студентами 2-го курса" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="riC-XF-6ND">
+                                <rect key="frame" x="107" y="486.5" width="200" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="ItK-wK-BiL"/>
-                                    <constraint firstAttribute="width" constant="216" id="P2g-zq-E3D"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="45" id="tJ8-91-1VU"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="216" id="xUL-sr-2p0"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
                                 <color key="textColor" systemColor="systemGrayColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -81,7 +79,6 @@
                                 <rect key="frame" x="134" y="758" width="146" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="32" id="etH-Pd-XXW"/>
-                                    <constraint firstAttribute="width" constant="146" id="lj5-Ot-ylA"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
                                 <state key="normal" title="Уже есть аккаунт?">
