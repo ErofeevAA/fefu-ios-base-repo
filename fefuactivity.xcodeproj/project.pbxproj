@@ -33,6 +33,8 @@
 		9DC260D32773759B002D0738 /* ActivityTypeViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DC260D12773759B002D0738 /* ActivityTypeViewCell.xib */; };
 		9DC260D6278BC1BC002D0738 /* FEFUCoreDataContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC260D5278BC1BC002D0738 /* FEFUCoreDataContainer.swift */; };
 		9DC260D9278BD598002D0738 /* fefuactivity.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9DC260D7278BD598002D0738 /* fefuactivity.xcdatamodeld */; };
+		9DC260E0279AD13C002D0738 /* AuthRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC260DF279AD13C002D0738 /* AuthRequests.swift */; };
+		9DC260E3279ADF7E002D0738 /* AuthParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC260E2279ADF7E002D0738 /* AuthParams.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +66,8 @@
 		9DC260D12773759B002D0738 /* ActivityTypeViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActivityTypeViewCell.xib; sourceTree = "<group>"; };
 		9DC260D5278BC1BC002D0738 /* FEFUCoreDataContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FEFUCoreDataContainer.swift; sourceTree = "<group>"; };
 		9DC260D8278BD598002D0738 /* fefuactivity.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = fefuactivity.xcdatamodel; sourceTree = "<group>"; };
+		9DC260DF279AD13C002D0738 /* AuthRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRequests.swift; sourceTree = "<group>"; };
+		9DC260E2279ADF7E002D0738 /* AuthParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthParams.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +100,8 @@
 		1DE4E5C3270A5CCE004A30CA /* fefuactivity */ = {
 			isa = PBXGroup;
 			children = (
+				9DC260E1279ADF4B002D0738 /* params */,
+				9DC260DE279AC3D2002D0738 /* Requests */,
 				9DC260D4278BC176002D0738 /* CoreData */,
 				9DB2ABF22731332500871E22 /* CustomViews */,
 				9DB2ABF1273127E900871E22 /* Activity */,
@@ -149,6 +155,22 @@
 				9DC260D5278BC1BC002D0738 /* FEFUCoreDataContainer.swift */,
 			);
 			path = CoreData;
+			sourceTree = "<group>";
+		};
+		9DC260DE279AC3D2002D0738 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				9DC260DF279AD13C002D0738 /* AuthRequests.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		9DC260E1279ADF4B002D0738 /* params */ = {
+			isa = PBXGroup;
+			children = (
+				9DC260E2279ADF7E002D0738 /* AuthParams.swift */,
+			);
+			path = params;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +255,7 @@
 				1DE4E5C9270A5CCE004A30CA /* ViewController.swift in Sources */,
 				9DC260D6278BC1BC002D0738 /* FEFUCoreDataContainer.swift in Sources */,
 				9DB2AC0B2732D79E00871E22 /* ActivityTableViewCell.swift in Sources */,
+				9DC260E3279ADF7E002D0738 /* AuthParams.swift in Sources */,
 				9DB2AC0F273D7E5700871E22 /* ActivityDetailsViewController.swift in Sources */,
 				9DB2AC13274529BD00871E22 /* MapController.swift in Sources */,
 				1DE4E5C5270A5CCE004A30CA /* AppDelegate.swift in Sources */,
@@ -240,6 +263,7 @@
 				9DB2ABFF273174CE00871E22 /* ActivitiesViewController.swift in Sources */,
 				1DE4E5C7270A5CCE004A30CA /* SceneDelegate.swift in Sources */,
 				9DC260D22773759B002D0738 /* ActivityTypeViewCell.swift in Sources */,
+				9DC260E0279AD13C002D0738 /* AuthRequests.swift in Sources */,
 				9DC260D9278BD598002D0738 /* fefuactivity.xcdatamodeld in Sources */,
 				9DB2AC072731759F00871E22 /* ProfileViewController.swift in Sources */,
 				9D036C8227207BBF001B2344 /* SignInController.swift in Sources */,
